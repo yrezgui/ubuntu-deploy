@@ -1,0 +1,62 @@
+@import "basscss/src/basscss.css";
+
+:root {
+  --ubuntu-gray: #efefef;
+  --ubuntu-orange: #dd4814;
+  --ubuntu-dark-gray: #c9c9c9;
+  --ubuntu-aubergine: #5e2750;
+  --space-15: 15rem;
+  --font-family: 'Ubuntu', sans-serif;
+}
+
+.px10 {
+  padding-left: var(--space-15);
+  padding-right: var(--space-15);
+}
+
+.bg-ubuntu {
+  background-color: var(--ubuntu-gray);
+}
+
+.bg-header-ubuntu {
+  background-color: var(--ubuntu-orange);
+}
+
+.ubuntu-box-shadow {
+  box-shadow: 0 0 3px var(--ubuntu-dark-gray);
+}
+
+.border {
+  border: 1px solid #dfdcd9;
+}
+
+#content .flex-column {
+  min-height: 100vh;
+}
+
+.main-content {
+  min-width: 750px;
+}
+
+.choose-cloud-provider {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+}
+
+.choose-cloud-provider:hover {
+  cursor: pointer;
+  background-color: color(var(--ubuntu-orange) alpha(10%));
+}
+
+ul.steps li.done {
+  color: var(--navy);
+}
+
+ul.steps li.active {
+  color: var(--blue);
+}
+
+ul.steps li.inactive {
+  color: var(--silver);
+}
